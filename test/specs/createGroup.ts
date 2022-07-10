@@ -132,8 +132,9 @@ describe("Create place", () => {
         //await $('#place_commission__available_from').selectByVisibleText("08.07.2022 00:30")
         const dataPiker = $('#place_commission__available_from')
         await dataPiker.click()
-        await browser.keys('Backspace')
-        await browser.pause(5000)
+        await browser.keys('Delete')
+        await dataPiker.setValue(dateForCommission)
+        await browser.pause(15000)
         await $('#place_commission__available_from').click()
         await $('#place_commission__percent_acquiring_commission').click() //выделил рандомное поля чтоб убрать датапикет
         await browser.pause(7000)
