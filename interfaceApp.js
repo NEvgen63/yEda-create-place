@@ -2,10 +2,12 @@ const btnCreate = document.querySelector('.btn-create');
 
 btnCreate.addEventListener ('click', () => {
     let partnerName = document.querySelector('.partner-name > input').value;
-    console.log(partnerName)
-    //partner = partnerName
-    return partner
-})
+    console.log(partnerName)  
+    return partnerName
+});
 
-console.log(partnerName);
+export default {partnerName};
 
+
+
+//добавить id магазина и креды
